@@ -20,11 +20,12 @@ public class RetrieveBasicInfoController {
 
         String email = "aniebietafia87@gmail.com";
         String currentDateTime = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
-        String backlink = "https://hng.tech/hire/java-developers";
+        String gitHubRepo = "https://github.com/HNG-12/hng-task-0-retrieve-basic-information";
+        //String backlink = "https://hng.tech/hire/java-developers";
 
         basicInfo.put("email", email);
         basicInfo.put("current_datetime", currentDateTime);
-        basicInfo.put("github_url", backlink);
+        basicInfo.put("github_url", gitHubRepo);
 
         return ResponseEntity.ok(basicInfo);
     }
